@@ -2,21 +2,24 @@
 #include <string>
 using namespace std;
 
-int
-main ()
+int main()
 {
   string userString;
 
+  // Prompt user to enter a string
   cin >> userString;
 
+  // Check if userString is equal to "Quit"
   if (userString == "Quit")
-	{
-	  cout << "Goodbye" << endl;
-	}
+  {
+    // If user entered "Quit", print "Goodbye"
+    cout << "Goodbye" << endl;
+  }
   else
-	{
-	  cout << "Hello" << endl;
-	}
+  {
+    // If user entered anything else, print "Hello"
+    cout << "Hello" << endl;
+  }
 
-  return 0;
+  return 0; // Return 0 to indicate successful execution
 }
